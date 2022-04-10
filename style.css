@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  flex-direction: column;
+  gap: 3rem;
+  background-image: url(./download-1.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home svg {
+  width: 30%;
+  height: 30%;
+  fill: white;
+}
+.HomePageHero_imageContainer__XIIR0 > svg {
+  fill: var(--color-text-inverse);
+}
+.search {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+  width: 50%;
+  height: 13%;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  width: 100%;
+}
+.left input {
+  border: none;
+  font-size: 2rem;
+  outline: none;
+  width: 90%;
+  height: 40px;
+  margin-left: 1rem;
+}
+.search i {
+  font-size: 2rem;
+  color: rgba(10, 10, 10, 0.585);
+}
+.famous {
+  gap: 2rem;
+}
+.famous-sura {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: 0.2s all;
+}
+.famous-sura:hover {
+  padding: 0.8rem;
+}
+.famous-sura a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+}
+.body {
+  width: 90%;
+  margin: 0 auto;
+}
+.recent--card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.title {
+  margin: 3rem 0rem;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.802);
+}
+.recent--card1 {
+  padding: 1rem;
+  font-size: 1.8rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.238);
+}
+.one {
+  color: rgba(0, 0, 0, 0.623);
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.recent--card--name {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.recent--card--arabic {
+  margin-top: 1rem;
+  height: 80px;
+  background-color: rgba(250, 235, 215, 0.408);
+}
+.recent--card1:hover {
+  background-color: rgba(255, 228, 196, 0.343);
+  border: 1px solid rgba(137, 43, 226, 0.442);
+}
+.sura--card-1 {
+  cursor: pointer;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 32%;
+}
+.tartib {
+  border: 1px solid rgba(0, 0, 0, 0.117);
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg);
+}
+.tartib1 {
+  font-size: 2rem;
+  transform: rotate(-45deg);
+}
+.sura--card {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: rgba(40, 33, 33, 0.72);
+}
+.sura-nomi-english,
+.arabchasi {
+  line-height: 3rem;
+}
+.sura-nomi-english h2,
+.arabchasi h2 {
+  font-size: 2rem;
+}
+.sura-nomi-english p,
+.arabchasi p {
+  font-size: 1.6rem;
+}
+.sura--card-1:hover {
+  transform: translate(2px, -2px);
+  /* transform: translateX(10px); */
+  transition: 0.2s all;
+  background-color: rgba(255, 228, 196, 0.343);
+}
+.sura--card-1:hover > .tartib {
+  border: none;
+  background-color: rgba(86, 84, 125, 0.15);
+}
+.sura--card-1 {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.238);
+}
+.popUp {
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(3px);
+}
+.popUp-main {
+  width: 80%;
+  height: 80vh;
+  background-color: #50a4abeb;
+}
+.popUp-main {
+  font-size: 2rem;
+}
+.popUp-main a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+}
+.lol1 {
+  margin-top: -60px;
+  height: 100%;
+}
+.popUp--btn {
+  margin-top: 50px;
+  border: 1px solid white;
+  height: 50px;
+  width: 20%;
+  gap: 3rem;
+  border-radius: 40px;
+}
+.bir {
+  width: 80%;
+  height: 70%;
+  text-align: left;
+  padding: 2rem;
+  overflow-y: scroll;
+  line-height: 4rem;
+}
+.ikki {
+  text-align: left;
+}
+.bir p {
+  color: white;
+  font-size: 2.6rem;
+}
+.audio audio {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 25%;
+}
+.close i {
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  color: white;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.loader img {
+  border-radius: 50%;
+  z-index: 102;
+  visibility: hidden;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  .sura--card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    overflow-x: hidden;
+  }
+  .sura--card-1 {
+    width: auto;
+    gap: 4px;
+  }
+  .input {
+    background: none;
+    font-size: 0.2rem;
+  }
+  .search {
+    display: none;
+  }
+  .popUp--btn {
+    width: 50%;
+    margin-top: 20px;
+    z-index: 101;
+    background-color: #50a4ab;
+  }
+  .close i {
+    font-size: 3rem;
+  }
+  .loader img {
+    width: 30%;
+    height: 30%;
+  }
+  .english1 p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .arabic1 p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
